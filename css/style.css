@@ -6,7 +6,7 @@ Licensed under  CC BY 3.0
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap');
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -39,7 +39,7 @@ Change your color here
 
 body {
     padding-top: 120px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .h1,
