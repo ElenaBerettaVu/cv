@@ -200,6 +200,7 @@ Navigation
 Header intro 
 ///////////////////////*/
 
+/* Header intro */
 .headline {
     position: relative;
     margin-bottom: 100px;
@@ -211,13 +212,24 @@ Header intro
     position: relative;
 }
 
-.headline-content .headline-title {
-    font-weight: 900
+.headline-title {
+    font-weight: 900; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase for all text */
+    font-size: 400%; /* Very large font size */
+    line-height: 1.2; /* Tight line height for large text */
+    margin-bottom: 50px; /* Space after the large text */
+}
+
+.headline-title .custom-name {
+    text-transform: none; /* Keeps 'ElenaBeretta*' in normal case */
 }
 
 .headline-subtitle {
-    font-size: 24px
+    font-size: 200%; /* Smaller font size for the subtitle */
+    line-height: 1.4; /* Slightly looser line height for readability */
+    text-transform: uppercase; /* Ensure subtitle is also uppercase */
 }
+
 
 
 /* Portfolio */
