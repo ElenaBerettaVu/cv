@@ -212,8 +212,10 @@ a.link:hover::before {
 }
 
 .headline-subtitle {
-    font-size: 200%;
+    font-weight: thin;
+    font-size: 500%;
     line-height: 1.4;
+    letter-spacing: -1.2px
     text-transform: uppercase;
 }
 
