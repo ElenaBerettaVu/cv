@@ -1,68 +1,69 @@
 /*////////////////////////////////////////////////////////////////////////////////////////////////////
-
 ShareBootstrap - Minimal portfolio Template v1.0.0 (https://sharebootstrap.com)
 Copyright 2019 Sharebootstrap.com
-Licensed under  CC BY 3.0 
-
+Licensed under CC BY 3.0 
 ////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap');
+/* Font-face Declarations */
+@font-face {
+    font-family: 'Geist';
+    src: url('../fonts/geist-sans/Geist-Regular.woff2') format('woff2'),
+         url('../fonts/geist-sans/Geist-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('../fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'),
+         url('../fonts/geist-mono/GeistMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-
 /*////////////////////////////////////////////////////////////////////////////////////////////////////
 Change your color here 
 ////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
 :root {
     --primary-color: #694bea;
     --secondary-color: #f8cf46;
+    --font-family--heading: 'Geist', sans-serif; /* Font family for headings */
+    --font-family--main: 'Geist Mono', sans-serif; /* Font family for main body text and other elements */
 }
 
 ::-moz-selection {
     color: #fff;
-    background: var(--primary-color)
+    background: var(--primary-color);
 }
 
 ::selection {
     color: #fff;
-    background: var(--primary-color)
-}
-
-::-moz-selection {
-    color: var;
-    background: var(--primary-color)
+    background: var(--primary-color);
 }
 
 body {
     padding-top: 120px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family--main);
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
     font-weight: 600;
     line-height: 1.64;
+    font-family: var(--font-family--heading);
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    cursor: pointer
+    cursor: pointer;
+    font-family: var(--font-family--main);
 }
 
 a:hover {
@@ -73,7 +74,7 @@ a:hover {
 a.link {
     position: relative;
     -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 a.link::before {
@@ -85,20 +86,20 @@ a.link::before {
     bottom: -4px;
     left: 0;
     -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 a.link:hover {
-    color: #000
+    color: #000;
 }
 
 a.link:hover::before {
-    background: #000
+    background: #000;
 }
 
 .space-md {
     padding-top: 90px;
-    padding-bottom: 90px
+    padding-bottom: 90px;
 }
 
 #preloader {
@@ -110,12 +111,12 @@ a.link:hover::before {
     z-index: 999;
     background: #fff;
     -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
 }
 
 #preloader.hide {
     visibility: hidden;
-    opacity: 0
+    opacity: 0;
 }
 
 #loader {
@@ -127,56 +128,45 @@ a.link:hover::before {
     left: 50%;
     margin: -30px 0 0 -30px;
     -webkit-animation: loader 1s infinite linear;
-    animation: loader 1s infinite linear
+    animation: loader 1s infinite linear;
 }
 
 @-webkit-keyframes loader {
     0% {
         -webkit-transform: scale(1);
-        border: 5px solid #222
+        border: 5px solid #222;
     }
     50% {
         -webkit-transform: scale(0);
-        border: 30px solid #222
+        border: 30px solid #222;
     }
     100% {
         -webkit-transform: scale(1);
-        border: 10px solid #222
+        border: 10px solid #222;
     }
 }
 
 @keyframes loader {
     0% {
-        -webkit-transform: scale(1);
         transform: scale(1);
-        border: 5px solid #222
+        border: 5px solid #222;
     }
     50% {
-        -webkit-transform: scale(0);
         transform: scale(0);
-        border: 30px solid #222
+        border: 30px solid #222;
     }
     100% {
-        -webkit-transform: scale(1);
         transform: scale(1);
-        border: 10px solid #222
+        border: 10px solid #222;
     }
 }
 
-
-/*/////////////////////
-  Container tweak
-///////////////////////*/
-
+/* Container tweak */
 .container {
-    max-width: 1440px
+    max-width: 1440px;
 }
 
-
-/*/////////////////////
-Navigation
-///////////////////////*/
-
+/* Navigation */
 .navbar-light .navbar-nav .nav-link {
     color: rgb(0, 0, 0);
     font-weight: 700;
@@ -195,11 +185,6 @@ Navigation
     text-transform: capitalize;
 }
 
-
-/*/////////////////////
-Header intro 
-///////////////////////*/
-
 /* Header intro */
 .headline {
     position: relative;
@@ -213,41 +198,35 @@ Header intro
 }
 
 .headline-title {
-    font-weight: 900; /* Bold font weight */
-    text-transform: uppercase; /* Uppercase for all text */
-    font-size: 400%; /* Very large font size */
-    line-height: 1.2; /* Tight line height for large text */
-    margin-bottom: 50px; /* Space after the large text */
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 400%;
+    line-height: 1.2;
+    margin-bottom: 50px;
 }
 
 .headline-title .custom-name {
-    text-transform: none; /* Keeps 'ElenaBeretta*' in normal case */
+    text-transform: none;
 }
 
 .headline-subtitle {
-    font-size: 200%; /* Smaller font size for the subtitle */
-    line-height: 1.4; /* Slightly looser line height for readability */
-    text-transform: uppercase; /* Ensure subtitle is also uppercase */
+    font-size: 200%;
+    line-height: 1.4;
+    text-transform: uppercase;
 }
-
-
 
 /* Portfolio */
-
 #portfolio-filters {
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
-
-
-/* portfolio filter */
 
 #filters li {
     display: inline-block;
-    margin-right: 100px
+    margin-right: 100px;
 }
 
 #filters li:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 #filters li a {
@@ -272,19 +251,17 @@ Header intro
 
 #filters li a:hover,
 #filters li a.active {
-    color: #000
+    color: #000;
 }
 
 #filters li a:hover::after,
 #filters li a.active::after {
-    width: 100%
+    width: 100%;
 }
 
-
 /* Portfolio items */
-
 .entry {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .entry-image {
@@ -295,12 +272,12 @@ Header intro
     left: 0;
     z-index: 1;
     -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
 }
 
 .entry:hover .entry-image {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 .work-entry-hover {
@@ -314,18 +291,18 @@ Header intro
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 .entry:hover .work-entry-hover {
     opacity: 1;
-    visibility: visible
+    visibility: visible;
 }
 
 .work-entry-content {
     position: absolute;
     bottom: 50px;
-    left: 50px
+    left: 50px;
 }
 
 .work-entry-title {
@@ -336,7 +313,7 @@ Header intro
     position: relative;
     top: 15px;
     -webkit-transition: all .5s cubic-bezier(0.4, .2, 0, 1) .2s;
-    transition: all .5s cubic-bezier(0.4, .2, 0, 1) .2s
+    transition: all .5s cubic-bezier(0.4, .2, 0, 1) .2s;
 }
 
 .work-entry-cat {
@@ -352,7 +329,7 @@ Header intro
 .entry:hover .work-entry-title,
 .entry:hover .work-entry-cat {
     opacity: 1;
-    top: 0
+    top: 0;
 }
 
 .project-intro li {
@@ -360,48 +337,7 @@ Header intro
     color: #000000;
     padding: 12px 0 13px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    max-width: 200px
+    max-width: 200px;
 }
 
-.project-intro li.title {
-    font-weight: 700;
-    padding: 0px 0 22px;
-}
-
-
-/* Footer */
-
-.footer {
-    margin-top: 115px;
-}
-
-.footer .footer-title {
-    margin-bottom: 100px
-}
-
-.footer ul {
-    margin-top: 30px
-}
-
-.footer ul li {
-    margin-bottom: 10px
-}
-
-.copy {
-    font-weight: 600;
-    color: #000;
-}
-
-
-/* Conatact */
-
-.contact .form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: 1.875rem .85rem;
-    color: #495057;
-    background-color: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 0;
-}
+.project-intro
