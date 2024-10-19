@@ -198,10 +198,10 @@ a.link:hover::before {
 }
 
 .headline-title {
-    font-weight: bold;
+    font-weight: black;
     text-transform: uppercase;
     font-size: 900%;
-    line-height: 0.8;
+    line-height: 0.9;
     letter-spacing: -1.2px
     margin-bottom: 50px;
 }
@@ -212,12 +212,37 @@ a.link:hover::before {
 }
 
 .headline-subtitle {
-    font-weight: 800;
-    font-size: 400%;
-    /*line-height: 2;*/
-    letter-spacing: -1.2px
+    font-weight: 700;
+    font-size: 2.5rem; /* Adjust size for large screens */
+    line-height: 1.2;
+    letter-spacing: -1.2px;
     text-transform: uppercase;
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow line breaks on smaller screens */
+    gap: 5px; /* Add a small gap between segments */
 }
+
+/* For individual segments */
+.headline-subtitle span {
+    white-space: normal; /* Allow natural wrapping */
+    display: inline-block; /* Make sure each span behaves like a block element */
+}
+
+/* Responsive breakpoints for smaller screens */
+@media (max-width: 768px) {
+    .headline-subtitle {
+        font-size: 2rem; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .headline-subtitle {
+        font-size: 1.5rem; /* Adjust font size for mobile devices */
+    }
+}
+
+
+
 
 /* Portfolio */
 #portfolio-filters {
