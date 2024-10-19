@@ -200,13 +200,14 @@ a.link:hover::before {
 .headline-title {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 400%;
+    font-size: 600%;
     line-height: 1.2;
     margin-bottom: 50px;
 }
 
 .headline-title .custom-name {
     text-transform: none;
+    font-weight: bold;
 }
 
 .headline-subtitle {
