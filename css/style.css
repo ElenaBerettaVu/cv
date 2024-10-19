@@ -201,7 +201,7 @@ a.link:hover::before {
     font-weight: 100;
     text-transform: uppercase;
     font-size: 900%;
-    line-height: 0.6;
+    line-height: 0.7;
     letter-spacing: -1.5px
     margin-bottom: 50px;
 }
