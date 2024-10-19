@@ -198,11 +198,11 @@ a.link:hover::before {
 }
 
 .headline-title {
-    font-weight: 100;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 900%;
-    line-height: 0.7;
-    letter-spacing: -1.5px
+    line-height: 0.8;
+    letter-spacing: -1.2px
     margin-bottom: 50px;
 }
 
