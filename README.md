@@ -64,3 +64,11 @@ The hero and hand collages were cropped from earlier design images approved for 
 New pages: `trajectory.html` explains the intellectual progression from fairness and representation to sequential evidence and decision processes; `leadership.html` highlights doctoral supervision, teaching and scientific exchange. These pages are meant to establish an independently credible PI profile, **not** to publish the confidential ERC proposal. Do not upload B1/B2 drafts, budgets, unpublished hypotheses or reviewer feedback.
 
 The site does not claim an ERC grant has been awarded or that proposed CEPATH results already exist. Review all public claims and confirm roles before publishing.
+
+## ERC-oriented content revision — 14 October 2026
+
+- Added `academic-cv.html`, with a curated academic narrative and official-profile link.
+- Strengthened leadership content with visiting research fellows and NWO-supported scientific meeting topics. Exact dates and grant identifiers remain unverified and are not invented.
+- Updated biography and research framing for a general computer-science audience.
+- The public website deliberately does **not** publish CEPATH B1/B2 proposal text or claim that proposed work has already been completed.
+- Edit copy in `assets/js/site.js`, and papers/Unpacked in `assets/js/content.js`. Commit and push from VS Code; GitHub Pages deploys the updated static files automatically.
