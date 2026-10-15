@@ -1,4 +1,4 @@
-# Elena Beretta — personal academic website (prototype v1)
+# Elena Beretta — personal academic website (static site v4 — Geist techno editorial)
 
 A working, responsive static-site prototype based on the approved dark editorial visual direction.
 
@@ -15,7 +15,7 @@ Then visit <http://localhost:8000>. No build system or package installation is n
 
 ## Sections
 
-- `index.html` — homepage with collage, research themes, Unpacked feature, selected publications
+- `index.html` — homepage with collage, three research themes, two Unpacked stories, selected publications and the only Let’s Connect block
 - `research.html` — questions and research themes
 - `publications.html` — publications with working search and topic filters
 - `teaching.html` — teaching, featuring the verified VU Ethical AI course
@@ -72,3 +72,13 @@ The site does not claim an ERC grant has been awarded or that proposed CEPATH re
 - Updated biography and research framing for a general computer-science audience.
 - The public website deliberately does **not** publish CEPATH B1/B2 proposal text or claim that proposed work has already been completed.
 - Edit copy in `assets/js/site.js`, and papers/Unpacked in `assets/js/content.js`. Commit and push from VS Code; GitHub Pages deploys the updated static files automatically.
+
+## V4 — Navigation & typography (15 Oct 2026)
+
+- **Geist** is the primary typeface throughout; **Geist Mono** is used for metadata, section indices and micro labels. Fonts are loaded through Google Fonts, with system fallbacks. No build step.
+- Top-level navigation is limited to **Research / Publications / Teaching / Unpacked / About**.
+- From **Research** follow the link to `trajectory.html`; from **About** follow the links to `academic-cv.html`, `leadership.html` and `beyond.html`. The subpages also provide a parent breadcrumb.
+- The homepage no longer repeats the top-level navigation as four quick cards. `Let's Connect` only appears on the homepage.
+- Edit design in `assets/css/styles.css`, especially the final `V4 — TECHNO EDITORIAL` section. Edit navigation and page composition in `assets/js/site.js`.
+
+To view locally use VS Code Live Server or `python3 -m http.server 8000`; upload the **contents** of this directory to the root of your GitHub Pages repository.
